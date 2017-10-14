@@ -11,12 +11,15 @@ use PHP\Methods\MagicMethods\Last_Methods\Last_method;
 
 require_once "vendor/autoload.php";
 
+// using fzaninotto/faker Packagist for data generation
+$faker = Faker\Factory::create();
+
 // when object is created automatically runs constructor and destructor.
 $obj = new Method();
 
 //__set() is run when writing data to inaccessible properties.
 //__get() is utilized for reading data from inaccessible properties.
-$obj->name = "Benas";
+$obj->name = $faker->firstName;
 echo $obj->name . PHP_EOL . '</br>';
 echo $obj->lastname . PHP_EOL . '</br>';
 
@@ -38,8 +41,8 @@ $obj->runTest('in object context');
 Method::runTest('in static context');
 
 $obj1 = new Last_method();
-$obj1->name = "Benas";
-$obj1->lastName = "Rimsa";
+$obj1->name = "$faker->firstName";
+$obj1->lastName = "$faker->lastName";
 //serialize() checks if your class has a function with the magic name __sleep().
 // If so, that function is executed prior to any serialization.
 // It can clean up the object and is supposed to return an array with the names of all
@@ -57,7 +60,7 @@ echo "Name: " . $obj1->name . PHP_EOL . "</br>";
 echo $obj1 . PHP_EOL;
 
 //The __invoke() method is called when a script tries to call an object as a function.
-$obj1(" result String");
+$obj1(" String result: " . $faker->text(50));
 
 //The only parameter of this method is an array containing exported properties
 // in the form array('property' => value, ...).
