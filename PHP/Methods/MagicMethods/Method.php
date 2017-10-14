@@ -5,9 +5,9 @@
  * Date: 17.10.14
  * Time: 00.26
  */
-namespace MAGIC_METHODS\FIRST_METHODS;
+namespace PHP\Methods\MagicMethods;
 
-class method {
+class Method {
 
     private $data = array();
     public $declared = 1;

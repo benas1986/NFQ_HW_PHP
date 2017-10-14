@@ -6,7 +6,7 @@
  * Time: 03.57
  */
 
-namespace OTHER;
+namespace PHP\Other\other_class_1;
 
 class other_class_1 {
 

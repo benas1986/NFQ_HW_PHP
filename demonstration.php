@@ -5,11 +5,10 @@
  * Date: 17.10.14
  * Time: 03.30
  */
-
-
+require_once "vendor/autoload.php";
 
 // when object is created automatically runs constructor and destructor.
-$obj = new Method();
+$obj = new PHP\Methods\MagicMethods\Method();
 
 //__set() is run when writing data to inaccessible properties.
 //__get() is utilized for reading data from inaccessible properties.
@@ -32,9 +31,9 @@ echo $obj->hidden . PHP_EOL . '</br>';
 // __call() is triggered when invoking inaccessible methods in an object context
 $obj->runTest('in object context');
 //__callStatic() is triggered when invoking inaccessible methods in a static context.
-Method::runTest('in static context');
+PHP\Methods\MagicMethods\Method::runTest('in static context');
 
-$obj1 = new last_method();
+$obj1 = PHP\Methods\MagicMethods\Last_method();
 $obj1->name = "Benas";
 $obj1->lastName = "Rimsa";
 //serialize() checks if your class has a function with the magic name __sleep().

@@ -8,9 +8,6 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "NFQ_HW_PHP\\PHP\\MAGIC_METHODS\\FIRST_METHODS\\method":"src/PHP/MAGIC_METHODS/FIRST_METHODS/method",
-            "NFQ_HW_PHP\\PHP\\MAGIC_METHODS\\OTHER_METHODS\\LAST_METHODS\\last_method":"src/PHP/MAGIC_METHODS/OTHER_METHODS/LAST_METHODS/last_method"
-        }
+        "psr-4": {"PHP\\": "PHP/"}
     }
 }

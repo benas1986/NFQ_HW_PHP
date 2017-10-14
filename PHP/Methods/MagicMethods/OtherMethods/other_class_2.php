@@ -6,7 +6,7 @@
  * Time: 04.02
  */
 
-namespace MAGIC_METHODS\OTHER_METHODS;
+namespace PHP\Methods\MagicMethods\Other\other_class_2;
 
 class other_class_2 {
 

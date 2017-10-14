@@ -5,9 +5,9 @@
  * Date: 17.10.14
  * Time: 02.43
  */
-namespace MAGIC_METHODS\OTHER_METHODS\LAST_METHODS;
+namespace PHP\Methods\MagicMethods;
 
-class last_method {
+class Last_method {
 
     function __sleep()
     {
@@ -34,7 +34,7 @@ class last_method {
     function __set_state($arr)
     {
         echo 'This is ' . __METHOD__ . PHP_EOL . '</br>';
-        $obj = new last_method();
+        $obj = new Last_method();
         $obj->name = $arr['name'];
         $obj->lastName = $arr['lastName'];
         return $obj;
@@ -43,7 +43,7 @@ class last_method {
     function __clone()
     {
         echo 'This is ' . __METHOD__ . PHP_EOL . '</br>';
-        $c = new last_method();
+        $c = new Last_method();
         $c->name = $this->name;
         return $c;
     }
