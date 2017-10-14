@@ -69,30 +69,3 @@ class method {
 
 }
 
-    // when object is created automatically runs constructor and destructor.
-    $obj = new Method();
-
-    //__set() is run when writing data to inaccessible properties.
-    //__get() is utilized for reading data from inaccessible properties.
-    $obj->name = "Benas";
-    echo $obj->name . PHP_EOL . '</br>';
-    echo $obj->lastname . PHP_EOL . '</br>';
-
-    //__isset() is triggered by calling isset() or empty() on inaccessible properties.
-    //__unset() is invoked when unset() is used on inaccessible properties.
-    var_dump(isset($obj->name)) . '</br>';
-    var_dump(isset($obj->lastname)) . '</br>';
-    unset($obj->name);
-    var_dump(isset($obj->name)) . '</br>';
-    //public is visible outside of class, so __get() is  not used, but __isset() is used.
-    echo $obj->declared . PHP_EOL . '</br>';
-    var_dump(isset($obj->declared))  . '</br>';
-    //privates not visible outside of class, so __get() is used.
-    echo $obj->hidden . PHP_EOL . '</br>';
-
-    // __call() is triggered when invoking inaccessible methods in an object context
-    $obj->runTest('in object context');
-    //__callStatic() is triggered when invoking inaccessible methods in a static context.
-    Method::runTest('in static context');
-
-
