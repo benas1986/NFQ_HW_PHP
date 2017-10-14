@@ -5,10 +5,14 @@
  * Date: 17.10.14
  * Time: 03.30
  */
+
+use PHP\Methods\MagicMethods\Method;
+use PHP\Methods\MagicMethods\Last_Methods\Last_method;
+
 require_once "vendor/autoload.php";
 
 // when object is created automatically runs constructor and destructor.
-$obj = new PHP\Methods\MagicMethods\Method();
+$obj = new Method();
 
 //__set() is run when writing data to inaccessible properties.
 //__get() is utilized for reading data from inaccessible properties.
@@ -31,9 +35,9 @@ echo $obj->hidden . PHP_EOL . '</br>';
 // __call() is triggered when invoking inaccessible methods in an object context
 $obj->runTest('in object context');
 //__callStatic() is triggered when invoking inaccessible methods in a static context.
-PHP\Methods\MagicMethods\Method::runTest('in static context');
+Method::runTest('in static context');
 
-$obj1 = PHP\Methods\MagicMethods\Last_method();
+$obj1 = new Last_method();
 $obj1->name = "Benas";
 $obj1->lastName = "Rimsa";
 //serialize() checks if your class has a function with the magic name __sleep().
@@ -71,3 +75,4 @@ echo "cloned object name: " . $obj2->name . PHP_EOL . "</br>";
 // that should be shown. If the method isn't defined on an object,
 // then all public, protected and private properties will be shown.
 var_dump($obj1);
+

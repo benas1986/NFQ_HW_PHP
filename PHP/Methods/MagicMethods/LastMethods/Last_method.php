@@ -5,7 +5,7 @@
  * Date: 17.10.14
  * Time: 02.43
  */
-namespace PHP\Methods\MagicMethods;
+namespace PHP\Methods\MagicMethods\Last_Methods;
 
 class Last_method {
 
