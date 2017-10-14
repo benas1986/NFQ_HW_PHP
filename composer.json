@@ -9,5 +9,8 @@
     ],
     "autoload": {
         "psr-4": {"PHP\\": "PHP/"}
+    },
+    "require": {
+        "fzaninotto/faker": "^1.7"
     }
 }
