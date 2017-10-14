@@ -7,7 +7,7 @@
  */
 
 use PHP\Methods\MagicMethods\Method;
-use PHP\Methods\MagicMethods\Last_Methods\Last_method;
+use PHP\Methods\MagicMethods\LastMethods\Last_method;
 
 require_once "vendor/autoload.php";
 
