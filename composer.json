@@ -1,0 +1,16 @@
+{
+    "name": "root/nfq_hw_php",
+    "description": "This is autoload psr-4",
+    "authors": [
+        {
+            "name": "Benas Rimsa",
+            "email": "benas.rimsa@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NFQ_HW_PHP\\PHP\\MAGIC_METHODS\\FIRST_METHODS\\method":"src/PHP/MAGIC_METHODS/FIRST_METHODS/method",
+            "NFQ_HW_PHP\\PHP\\MAGIC_METHODS\\OTHER_METHODS\\LAST_METHODS\\last_method":"src/PHP/MAGIC_METHODS/OTHER_METHODS/LAST_METHODS/last_method"
+        }
+    }
+}
