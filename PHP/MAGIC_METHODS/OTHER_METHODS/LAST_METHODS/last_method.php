@@ -5,6 +5,7 @@
  * Date: 17.10.14
  * Time: 02.43
  */
+namespace MAGIC_METHODS\OTHER_METHODS\LAST_METHODS;
 
 class last_method {
 

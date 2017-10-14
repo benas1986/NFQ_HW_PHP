@@ -5,6 +5,7 @@
  * Date: 17.10.14
  * Time: 00.26
  */
+namespace MAGIC_METHODS\FIRST_METHODS;
 
 class method {
 
