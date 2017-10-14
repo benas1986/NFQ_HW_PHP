@@ -6,7 +6,7 @@
  * Time: 00.26
  */
 
-class Method {
+class method {
 
     private $data = array();
     public $declared = 1;
