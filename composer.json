@@ -1,16 +1,10 @@
 {
     "name": "root/nfq_hw_php",
-    "description": "This is autoload psr-4",
+    "description": "",
     "authors": [
         {
             "name": "Benas Rimsa",
             "email": "benas.rimsa@gmail.com"
         }
     ],
-    "autoload": {
-        "psr-4": {"PHP\\": "PHP/"}
-    },
-    "require": {
-        "fzaninotto/faker": "^1.7"
-    }
-}
+ }

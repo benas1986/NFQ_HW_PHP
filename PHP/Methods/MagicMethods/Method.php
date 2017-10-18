@@ -5,7 +5,7 @@
  * Date: 17.10.14
  * Time: 00.26
  */
-namespace PHP\Methods\MagicMethods;
+namespace Methods\MagicMethods;
 
 class Method {
 
